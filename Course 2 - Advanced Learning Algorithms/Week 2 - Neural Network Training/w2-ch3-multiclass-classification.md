@@ -144,6 +144,7 @@ The _loss_ will be calculated for each value of $y$ and it's _cost function_ wil
 #### Softmax Cost function
 
 The _loss function_ for _softmax regression_ is:
+
 $$loss(a_1,...a_n) = \begin{cases} - \log a_1\quad\text{if } y = 1 \\ -\log a_2\quad\text{if }y = 2 \\ \qquad\qquad\vdots \\ - \log a_N\quad\text{if } y = N\end{cases}$$
 
 In the _loss function_, $y$ can take up any value till $N$ which is denoted by $j$, so is $a_j$.
