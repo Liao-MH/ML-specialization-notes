@@ -184,10 +184,10 @@ Here, we have:
 In _output_ layer, each _neuron_ computes the value $z$
 $$z^{[3]}_j = \vec{w}^{[3]}_j \cdot \vec{a}^{[2]} + b^{[3]}_1$$
 
-And, find the value of $a_j$
+And, find the value of $a_j$: 
 
-$$ a^{[3]}_j = \frac{e^{z^{[3]}_j}}{\sum_{k=1}^{10} e^{z^{[3]}_k}} $$
-
+$$a^{[3]}_j = \frac{e^{z^{[3]}_j}}{\sum_{k=1}^{10} e^{z^{[3]}_k}}$$
+$$a^{[3]}_j = \frac{e^{z^{[3]}_1}}{e^{z^{[3]}1} + \cdots + e^{z^{[3]}{10}}}$$
 
 Here, one thing is different, i.e. in other _activation_ functions, we have a single _activation_ value $a_i$ for each _input_ value $x_i$, but in _softmax_ function, we have $a_j$ which contains the probability of each _input_ $x_i$ being the class $j$.
 
